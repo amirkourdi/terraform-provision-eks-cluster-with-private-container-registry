@@ -1,4 +1,5 @@
-# terraform-provision-eks-cluster
+# terraform-provision-eks-cluster-with-private-container-registry
+
 Set up workspace
 $ git clone https://github.com/AmirKourdi/terraform-provision-eks-cluster-with-private-container-registry
 
