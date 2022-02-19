@@ -58,7 +58,7 @@ metadata:
   name: docker-carpie-net
   namespace: default
 spec:
-  secretName: docker-carpie-net-tls
+  secretName: docker-carpie-net-77fz2
   issuerRef:
     name: letsencrypt-prod
     kind: ClusterIssuer
