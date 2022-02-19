@@ -89,8 +89,6 @@ Data
 ====
 
 Deploying the registry
-If you've made it this far in the k3s series, the deploy command should be routine to you...
-
 kubectl apply -f registry.yaml
 
 Validation
