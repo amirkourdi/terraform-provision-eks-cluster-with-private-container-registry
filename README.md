@@ -1,6 +1,6 @@
 # terraform-provision-eks-cluster
 Set up workspace
-$ git clone https://github.com/AmirKourdi/terraform-provision-eks-cluster
+$ git clone https://github.com/AmirKourdi/terraform-provision-eks-cluster-with-private-container-registry
 
 Customize deploymet 
 1. vpc.tf provisions a VPC, subnets and availability zones using the AWS VPC Module. A new VPC is created for this tutorial so it doesn't impact your existing cloud environment and resources.
