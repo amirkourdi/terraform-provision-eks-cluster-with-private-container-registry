@@ -87,6 +87,9 @@ Annotations:  <none>
 Type:  Opaque
 Data
 
+#install cert-manager
+$ kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.7.1/cert-manager.yaml
+
 
 #Deploying the registry
 kubectl apply -f registry.yaml
