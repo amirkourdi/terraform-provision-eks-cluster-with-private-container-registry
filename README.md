@@ -38,10 +38,10 @@ $ terraform init
 Provision the EKS cluster
 $ terraform apply
 
-Configure kubectl
+#Configure kubectl
 $ aws eks --region $(terraform output -raw region) update-kubeconfig --name $(terraform output -raw cluster_name)
 
-Deploy Kubernetes Metrics Server
+#Deploy Kubernetes Metrics Server
 $ wget -O v0.3.6.tar.gz https://codeload.github.com/kubernetes-sigs/metrics-server/tar.gz/v0.3.6 && tar -xzf v0.3.6.tar.gz
 $ kubectl apply -f metrics-server-0.3.6/deploy/1.8+/
 
@@ -49,10 +49,10 @@ $ kubectl apply -f metrics-server-0.3.6/deploy/1.8+/
 NAME             READY   UP-TO-DATE   AVAILABLE   AGE
 metrics-server   1/1     1            1           4s
 
-Deploy Kubernetes Dashboard
+#Deploy Kubernetes Dashboard
 $ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml
 
-Acess dashboard
+#Acess dashboard
 $ kubectl proxy
 
 You should be able to access the Kubernetes dashboard here 
@@ -61,7 +61,7 @@ You should be able to access the Kubernetes dashboard here
 
 
 # Docker Register
-Creating basic auth credentials
+#Creating basic auth credentials
 First, we'll create our basic auth credentials file. You will need the htpasswd utility for this. On Ubuntu-based systems, this utility is packaged in the apache2-utils package. We can install that with a standard apt install command.
 
 sudo apt install -y apache2-utils
@@ -84,14 +84,13 @@ Labels:       <none>
 Annotations:  <none>
 
 Type:  Opaque
-
 Data
-====
 
-Deploying the registry
+
+#Deploying the registry
 kubectl apply -f registry.yaml
 
-Validation
+#Validation
 kubectl get pods
 
 OUTPUT
